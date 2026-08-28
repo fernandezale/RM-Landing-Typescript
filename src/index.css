@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-light: #E3DED5;
+  --color-brand-muted: #999991;
+  --color-brand-accent: #A06B58;
+  --color-brand-brown: #41261B;
+  --color-brand-dark: #250D03;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-light);
+    color: var(--color-brand-dark);
+    font-family: system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}

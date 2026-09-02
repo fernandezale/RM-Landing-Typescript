@@ -1,8 +1,8 @@
-import { useState } from 'react'
-
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
+import Hero from './components/Hero';
+import './css/embla.css'
 
 
 const WHATSAPP_NUMBER = '5493516072272';
@@ -13,9 +13,7 @@ function App() {
     <>
       <Navbar whatsappNumber={WHATSAPP_NUMBER} />
       <section id="center">
-        <div className="hero">
-          <h1>Get started</h1>
-        </div>
+        <Hero whatsappNumber={WHATSAPP_NUMBER}/>
       </section>
       <Footer />
 

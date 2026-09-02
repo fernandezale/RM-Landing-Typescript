@@ -11,7 +11,7 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('¡Hola! Quisiera realizar una consulta sobre sus muebles de MDF a medida.')}`;
     
     return (
-    <header className="sticky top-0 z-50 bg-brand-brown text-brand-light shadow-lg border-b border-brand-dark/20">
+    <header className="sticky top-0 z-50 bg-brand-muted text-brand-dark shadow-lg border-b border-brand-dark/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
@@ -27,10 +27,10 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <a href="#catalogo" className="hover:text-brand-accent transition-colors">Catálogo</a>
-            <a href="#a-medida" className="hover:text-brand-accent transition-colors">Trabajos a Medida</a>
-            <a href="#taller" className="hover:text-brand-accent transition-colors">El Taller</a>
-            <a href="#contacto" className="hover:text-brand-accent transition-colors">Ubicación</a>
+            <a href="#catalogo" className="hover:text-brand-accent transition-colors">CATÁLOGO</a>
+            <a href="#a-medida" className="hover:text-brand-accent transition-colors">ULTIMOS TRABAJOS</a>
+            <a href="#taller" className="hover:text-brand-accent transition-colors">EL TALLER</a>
+            <a href="#contacto" className="hover:text-brand-accent transition-colors">UBICACIÓN</a>
           </nav>
 
           <div className="hidden md:flex items-center">

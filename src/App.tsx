@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import './css/embla.css'
 import CategoriesApp from './components/CategoriesApp';
+import AboutMDFApp from './components/AboutMDFApp';
 
 
 const WHATSAPP_NUMBER = '5493516072272';
@@ -16,6 +17,7 @@ function App() {
       <section id="center">
         <Hero whatsappNumber={WHATSAPP_NUMBER}/>
         <CategoriesApp/>
+        <AboutMDFApp/>
       </section>
       <Footer />
 

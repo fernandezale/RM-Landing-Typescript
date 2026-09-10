@@ -3,7 +3,7 @@ import { MessageCircle, ChevronLeft, ChevronRight, Sparkles, CheckCircle2, Ruler
 import EmblaCarousel from './EmblaCarousel'
 import type{ EmblaOptionsType } from 'embla-carousel' 
 
-interface HeroSlide {
+export interface HeroSlide {
   titulo: string,
   distintivo: string,
   descripcion: string,
@@ -25,7 +25,7 @@ const Hero = ({ whatsappNumber }: HeroProps) => {
     distintivo: 'Fabricación Directa de Barrio',
     descripcion: 'Diseñamos y fabricamos escritorios, racks y organizadores funcionales. Calidad de MDF premium y encastres precisos.',
     textoDestacado: 'Traé tus medidas o planos y lo armamos juntos.',
-    imagen: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1000&q=80',
+    imagen: '/IMG_5963.webp',
 
   },
   {
@@ -33,7 +33,7 @@ const Hero = ({ whatsappNumber }: HeroProps) => {
     distintivo: 'Espacios de Trabajo',
     descripcion: 'Optimizá tu home office con soluciones robustas, pasacables integrados y terminaciones de primera.',
     textoDestacado: 'Adaptamos la altura y profundidad a tus requerimientos.',
-    imagen: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1000&q=80',
+    imagen: '/IMG_5963.png',
   },
   {
     titulo: 'Racks y estanterías a tu medida.',
@@ -58,24 +58,10 @@ const Hero = ({ whatsappNumber }: HeroProps) => {
 
   return(
     
-    <section className="relative overflow-hidden py-16 md:py-24 bg-linear-to-b from-brand-light to-brand-accent/60">
+    <section className="relative overflow-hidden bg-linear-to-b from-brand-light to-brand-accent/60">
       
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-      <button 
-        onClick={previousSlide}
-        className="p-2 rounded-full bg-brand-brown/40 hover:bg-brand-brown text-brand-light transition-colors"
-        aria-label="Slide anterior"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-
-      <button 
-        onClick={nextSlide}
-        className="p-2 rounded-full bg-brand-brown/40 hover:bg-brand-brown text-brand-light transition-colors"
-        aria-label="Slide siguiente"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
+      <EmblaCarousel heroSlides={HeroSlides} options={OPTIONS} />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

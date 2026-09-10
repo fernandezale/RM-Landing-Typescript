@@ -4,14 +4,15 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Fade from 'embla-carousel-fade'
 import { NextButton, PrevButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import type { HeroSlide } from './Hero'
 
 type PropType = {
-  slides: number[]
+  heroSlides: HeroSlide[]
   options?: EmblaOptionsType
 }
 
 const EmblaCarousel = (props: PropType) => {
-  const { slides, options } = props
+  const { heroSlides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade()])
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -28,12 +29,12 @@ const EmblaCarousel = (props: PropType) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {heroSlides.map((heroSlide, index) => (
             <div className="embla__slide" key={index}>
               <img
                 className="embla__slide__img"
-                src={`https://picsum.photos/600/350?v=${index}`}
-                alt="Your alt text"
+                src={heroSlide.imagen}
+                alt={heroSlide.titulo}
               />
             </div>
           ))}

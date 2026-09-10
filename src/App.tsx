@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import './css/embla.css'
+import CategoriesApp from './components/CategoriesApp';
 
 
 const WHATSAPP_NUMBER = '5493516072272';
@@ -14,6 +15,7 @@ function App() {
       <Navbar whatsappNumber={WHATSAPP_NUMBER} />
       <section id="center">
         <Hero whatsappNumber={WHATSAPP_NUMBER}/>
+        <CategoriesApp/>
       </section>
       <Footer />
 

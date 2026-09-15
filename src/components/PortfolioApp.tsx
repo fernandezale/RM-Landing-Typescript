@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { X, ZoomIn } from 'lucide-react'
 
 interface Project {

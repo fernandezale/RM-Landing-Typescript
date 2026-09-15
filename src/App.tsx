@@ -6,7 +6,8 @@ import './css/embla.css'
 import CategoriesApp from './components/CategoriesApp';
 import AboutMDFApp from './components/AboutMDFApp';
 import PortfolioApp from './components/PortfolioApp';
-
+import LocationApp from './components/LocationApp';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const WHATSAPP_NUMBER = '5493516072272';
 
@@ -20,9 +21,10 @@ function App() {
         <CategoriesApp/>
         <AboutMDFApp/>
         <PortfolioApp/>
+        <LocationApp whatsappNumber={WHATSAPP_NUMBER} />
       </section>
       <Footer />
-
+      <FloatingWhatsApp whatsappNumber={WHATSAPP_NUMBER} />
     </>
   )
 }

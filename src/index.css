@@ -6,6 +6,7 @@
   --color-brand-accent: #A06B58;
   --color-brand-brown: #41261B;
   --color-brand-dark: #250D03;
+  --color-brand-black: #000000;
 }
 
 @layer base {

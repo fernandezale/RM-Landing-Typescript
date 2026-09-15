@@ -4,7 +4,7 @@
   position: relative; /* Convierte al contenedor principal en la referencia de posicionamiento */
 /*TODO: Ajustar --slide-height: 38rem; para que en
 moviles se vea bien */
-  --slide-height: 38rem;
+  --slide-height: 43rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }

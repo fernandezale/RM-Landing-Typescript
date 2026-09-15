@@ -1,4 +1,3 @@
-import React from 'react';
 
 export interface CategoryItem {
 id: string;
@@ -46,7 +45,7 @@ return (
 
 <section id="categorias" className="py-6 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h1 className="text-base py-4 sm:py-6 lg:py-8 sm:text-lg font-bold text-brand-dark">NUESTRAS COLECCIONES</h1>
+        <h1 className="text-base py-4 sm:py-6 lg:py-8 sm:text-lg font-bold text-brand-dark">NUESTRO CATÁLOGO</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
         {CATEGORIES.map((category) => (
             <div

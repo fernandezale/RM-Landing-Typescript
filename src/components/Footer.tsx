@@ -11,9 +11,9 @@ const Footer = () => {
 
           <div className="flex justify-center space-x-6 text-xs text-brand-muted">
             <a href="#catalogo" className="hover:text-brand-light">Catálogo</a>
-            <a href="#a-medida" className="hover:text-brand-light">A Medida</a>
-            <a href="#taller" className="hover:text-brand-light">El Taller</a>
-            <a href="#contacto" className="hover:text-brand-light">Contacto</a>
+            <a href="#nosotros" className="hover:text-brand-light">Por qué MDF</a>
+            <a href="#ultimos-trabajos" className="hover:text-brand-light">Últimos Trabajos</a>
+            <a href="#ubicacion" className="hover:text-brand-light">Ubicación y Taller</a>
           </div>
 
           <div className="text-xs text-brand-muted md:text-right">

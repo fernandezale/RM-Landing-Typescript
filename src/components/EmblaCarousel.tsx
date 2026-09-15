@@ -1,8 +1,10 @@
 import type { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import Fade from 'embla-carousel-fade'
-import { NextButton, PrevButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
-import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import { NextButton, PrevButton } from './EmblaCarouselArrowButtons'
+import { usePrevNextButtons } from '../hooks/usePrevNextButtons'
+import { DotButton } from './EmblaCarouselDotButton'
+import { useDotButton } from '../hooks/useDotButton'
 import type { HeroSlide } from './Hero'
 import { motion, AnimatePresence } from 'framer-motion'
 

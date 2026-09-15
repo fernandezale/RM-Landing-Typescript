@@ -9,11 +9,7 @@ export interface HeroSlide {
   imagen: string
 }
 
-interface HeroProps {
-  whatsappNumber: string;
-}
-
-const Hero = ({ whatsappNumber: _whatsappNumber }: HeroProps) => {
+const Hero = () => {
   const HeroSlides : HeroSlide[] = [
   {
     titulo: 'Muebles de MDF a medida para tu hogar.',

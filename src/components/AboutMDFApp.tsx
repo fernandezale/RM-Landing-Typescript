@@ -1,4 +1,3 @@
-import React from 'react'
 import { 
   PencilRuler, 
   ShieldCheck, 
@@ -70,7 +69,7 @@ const ADVANTAGES: Advantage[] = [
 
 const AboutMDFApp = () => {
   return (
-    <section id="nosotros" className="py-16 bg-brand-light/50">
+    <section id="nosotros" className="py-16 bg-brand-light/50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Título de la sección */}

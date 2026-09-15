@@ -32,18 +32,6 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
             <a href="#ubicacion" className="hover:text-brand-accent transition-colors">UBICACIÓN</a>
           </nav>
 
-          <div className="hidden md:flex items-center">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-brand-accent hover:bg-[#885442] text-brand-light px-5 py-2.5 rounded-xl font-medium transition-all shadow-md"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>Contactar por WhatsApp</span>
-            </a>
-          </div>
-
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -60,15 +48,6 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
           <a href="#catalogo" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Catálogo</a>
           <a href="#ultimos-trabajos" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Ultimos Trabajos</a>
           <a href="#ubicacion" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Ubicación</a>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center space-x-2 bg-brand-accent text-brand-light px-4 py-3 rounded-xl font-semibold shadow"
-          >
-            <MessageCircle className="w-5 h-5" />
-            <span>Contactar por WhatsApp</span>
-          </a>
         </div>
       )}
     </header>

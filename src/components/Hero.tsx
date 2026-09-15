@@ -9,7 +9,11 @@ export interface HeroSlide {
   imagen: string
 }
 
-const Hero = () => {
+interface HeroProps {
+  whatsappNumber?: string;
+}
+
+const Hero = ({ whatsappNumber }: HeroProps) => {
   const HeroSlides : HeroSlide[] = [
   {
     titulo: 'Muebles de MDF a medida para tu hogar.',
@@ -41,7 +45,7 @@ const Hero = () => {
     
     <section className="relative overflow-hidden bg-linear-to-b from-brand-light to-brand-accent/60">
       
-      <EmblaCarousel heroSlides={HeroSlides} options={OPTIONS} />
+      <EmblaCarousel heroSlides={HeroSlides} options={OPTIONS} whatsappNumber={whatsappNumber} />
       
     </section>
     );

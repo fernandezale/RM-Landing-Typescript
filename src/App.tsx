@@ -17,7 +17,7 @@ function App() {
     <>
       <Navbar whatsappNumber={WHATSAPP_NUMBER} />
       <section id="center">
-        <Hero />
+        <Hero whatsappNumber={WHATSAPP_NUMBER} />
         <CategoriesApp/>
         <AboutMDFApp/>
         <PortfolioApp/>

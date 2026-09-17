@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import React from 'react';
+import { MessageCircle } from 'lucide-react';
 
 interface FloatingWhatsAppProps {
   whatsappNumber: string;
 }
 
 const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ whatsappNumber }) => {
-  const [showTooltip, setShowTooltip] = useState(true);
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     '¡Hola! Quisiera realizar una consulta sobre sus muebles de MDF a medida.'
@@ -14,24 +13,6 @@ const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ whatsappNumber }) =
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-auto">
-      {/* Tooltip promocional flotante */}
-      {showTooltip && (
-        <div className="mb-3 mr-1 bg-white text-brand-dark px-4 py-2.5 rounded-2xl shadow-xl border border-brand-light/60 flex items-center space-x-2 animate-bounce max-w-xs transition-all">
-          <span className="text-xs font-semibold leading-snug">
-            ¿Tenés dudas o medidas? <br />
-            <span className="text-brand-accent font-bold">¡Escribinos por WhatsApp!</span>
-          </span>
-          <button
-            onClick={() => setShowTooltip(false)}
-            className="text-gray-400 hover:text-gray-600 p-0.5 rounded-full hover:bg-gray-100 transition-colors"
-            title="Cerrar"
-            aria-label="Cerrar notificación"
-          >
-            <X className="w-3.5 h-3.5" />
-          </button>
-        </div>
-      )}
-
       {/* Botón flotante principal de WhatsApp */}
       <a
         href={whatsappUrl}

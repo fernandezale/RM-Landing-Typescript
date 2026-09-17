@@ -7,7 +7,7 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent text-white transition-all duration-300">
+    <header className="fixed top-0 left-0 w-full z-50 bg-brand-dark/70 backdrop-blur-md border-b border-brand-brown/30 text-white shadow-md transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">

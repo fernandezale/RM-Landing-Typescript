@@ -51,9 +51,9 @@ const EmblaCarousel = (props: PropType) => {
                 {/* Capa oscura de contraste */}
                 <div className="absolute inset-0 bg-black/50 -z-10" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16 sm:pt-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div className="space-y-4 sm:space-y-5">
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16 sm:pt-0 pb-12 sm:pb-16">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+                    <div className="space-y-4 sm:space-y-5 pt-12 sm:pt-20">
                       <AnimatePresence mode="wait">
                         {isActive && (
                           <motion.div
@@ -66,15 +66,7 @@ const EmblaCarousel = (props: PropType) => {
                             }}
                             className="space-y-4 sm:space-y-5"
                           >
-                            {/* Distintivo / Etiqueta animada */}
-                            <motion.div 
-                              initial={{ opacity: 0, x: 40 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ duration: 0.7, delay: 0.1 }}
-                              className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide border border-white/20"
-                            >
-                              <span>{heroSlide.distintivo}</span>
-                            </motion.div>
+                            
                             
                             {/* Título Principal animado */}
                             <motion.h1 
@@ -85,16 +77,6 @@ const EmblaCarousel = (props: PropType) => {
                             >
                               {heroSlide.titulo}
                             </motion.h1>
-
-                            {/* Descripción del Slide */}
-                            <motion.p
-                              initial={{ opacity: 0, x: 50 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ duration: 0.8, delay: 0.3 }}
-                              className="text-sm sm:text-lg text-white/90 leading-relaxed font-normal max-w-xl drop-shadow-xs"
-                            >
-                              {heroSlide.descripcion}
-                            </motion.p>
 
                             {/* Insignia / Texto Destacado */}
                             <motion.div
@@ -107,25 +89,7 @@ const EmblaCarousel = (props: PropType) => {
                               <span>{heroSlide.textoDestacado}</span>
                             </motion.div>
 
-                            {/* Botón CTA por WhatsApp */}
-                            {whatsappNumber && (
-                              <motion.div
-                                initial={{ opacity: 0, x: 50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.8, delay: 0.5 }}
-                                className="pt-2"
-                              >
-                                <a
-                                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`¡Hola! Quisiera solicitar presupuesto sobre: ${heroSlide.titulo}`)}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center space-x-2.5 bg-brand-accent hover:bg-[#885442] text-white px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 text-sm sm:text-base"
-                                >
-                                  <MessageCircle className="w-5 h-5 fill-white/20" />
-                                  <span>Pedir Presupuesto por WhatsApp</span>
-                                </a>
-                              </motion.div>
-                            )}
+                            
                           </motion.div>
                         )}
                       </AnimatePresence>

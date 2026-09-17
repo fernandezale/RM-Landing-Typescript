@@ -1,15 +1,11 @@
 import { useState } from 'react';
-import { Hammer, MessageCircle, Menu, X } from 'lucide-react';
+import { Hammer, Menu, X } from 'lucide-react';
 
-interface NavbarProps {
-  whatsappNumber: string;
-}
 
-const Navbar = ({ whatsappNumber }: NavbarProps) => {
+const Navbar = () => {
    
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('¡Hola! Quisiera realizar una consulta sobre sus muebles de MDF a medida.')}`;
-    
+
     return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent text-white transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,17 +29,6 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
             <a href="#ubicacion" className="hover:text-brand-accent transition-colors">UBICACIÓN</a>
           </nav>
 
-          <div className="hidden md:flex items-center">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-brand-accent hover:bg-[#885442] text-brand-light px-5 py-2.5 rounded-xl font-medium transition-all shadow-md"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>Contactar por WhatsApp</span>
-            </a>
-          </div>
 
           <div className="md:hidden">
             <button
@@ -63,15 +48,6 @@ const Navbar = ({ whatsappNumber }: NavbarProps) => {
           <a href="#nosotros" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Por qué MDF</a>
           <a href="#ultimos-trabajos" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Últimos Trabajos</a>
           <a href="#ubicacion" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-base font-medium hover:text-brand-accent">Ubicación</a>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center space-x-2 bg-brand-accent text-brand-light px-4 py-3 rounded-xl font-semibold shadow"
-          >
-            <MessageCircle className="w-5 h-5" />
-            <span>Contactar por WhatsApp</span>
-          </a>
         </div>
       )}
     </header>

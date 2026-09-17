@@ -2,16 +2,11 @@
   max-width: 100%;
   margin: auto;
   position: relative; /* Convierte al contenedor principal en la referencia de posicionamiento */
-  --slide-height: 38rem;
+  --slide-height: 100dvh;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
 
-@media (min-width: 640px) {
-  .embla {
-    --slide-height: 44rem;
-  }
-}
 
 .embla__viewport {
   overflow: hidden;

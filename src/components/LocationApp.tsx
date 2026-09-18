@@ -16,9 +16,7 @@ const LocationApp: React.FC<LocationAppProps> = ({ whatsappNumber }) => {
         
         {/* Encabezado de la sección */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs sm:text-sm font-semibold tracking-wider text-brand-accent uppercase bg-brand-accent/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
-            Atención Personalizada
-          </span>
+          
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight uppercase">
             Nuestro Taller y Ubicación
           </h2>

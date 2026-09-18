@@ -195,7 +195,7 @@ const CategoriesApp = () => {
                     className="group flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-1.5"
                   >
                     {/* Tarjeta con imagen */}
-                    <div className="w-full aspect-[4/5] overflow-hidden rounded-xl bg-gray-100 shadow-sm group-hover:shadow-md transition-shadow relative">
+                    <div className="w-full aspect-4/5 overflow-hidden rounded-xl bg-gray-100 shadow-sm group-hover:shadow-md transition-shadow relative">
                       <img
                         src={category.imagen}
                         alt={category.nombre}
@@ -274,7 +274,7 @@ const CategoriesApp = () => {
                     </div>
 
                     {/* Contenido descriptivo */}
-                    <div className="p-4 flex flex-col flex-grow">
+                    <div className="p-4 flex flex-col grow">
                       <h3 className="text-base font-bold text-brand-dark group-hover:text-brand-accent transition-colors mb-1">
                         {product.titulo}
                       </h3>

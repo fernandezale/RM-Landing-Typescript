@@ -12,20 +12,20 @@ const PROJECTS: Project[] = [
   {
     id: '1',
     titulo: 'Cocina Integral Moderna',
-    descripcion: 'Diseño e instalación de bajo mesadas y alacenas en MDF con acabado en melamina grafito y tiradores invisibles.',
-    imagen: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80'
+    descripcion: 'Diseño e instalación de bajo mesadas y alacenas en MDF con FAPLAC y manijas de aluminio.',
+    imagen: '/RecientesCocina.webp'
   },
   {
     id: '2',
     titulo: 'Rack TV y Biblioteca',
-    descripcion: 'Mueble de living a medida con espacio para cableado oculto, repisas flotantes y modulos inferiores de guardado.',
-    imagen: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1000&q=80'
+    descripcion: 'Mueble de living a medida con espacio para cableado oculto, repisas con luces y modulos de guardado.',
+    imagen: '/IMG_5963.webp'
   },
   {
     id: '3',
     titulo: 'Escritorio Home Office',
     descripcion: 'Puesto de trabajo ergonómico con cajonera móvil, pasacables integrados y terminación de MDF textura madera cálida.',
-    imagen: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1000&q=80'
+    imagen: '/RecientesEscritorio.webp'
   }
 ]
 

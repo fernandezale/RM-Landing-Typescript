@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Hammer, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -12,13 +12,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-brand-accent text-brand-light rounded-xl shadow-md">
-              <Hammer className="w-6 h-6" />
+              <img 
+                src="/FotoLogoFondoNegro3-removebg-preview.svg" 
+                alt="Nombre del Local - Muebles en MDF" 
+                className="h-20 w-20 object-contain"  
+              />
             </div>
             <div>
-              <span className="text-xl font-bold tracking-tight block text-brand-light">
-                RENUEVO MUEBLES
+              <span className="font-montserrat text-xl font-medium tracking-tight block text-brand-light">
+                Muebles a medida
               </span>
-              <span className="text-xs text-brand-light tracking-wide">Muebles de diseño</span>
+              
             </div>
           </div>
 

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+
   --color-brand-light: #E3DED5;
   --color-brand-muted: #999991;
   --color-brand-accent: #A06B58;
@@ -13,7 +16,7 @@
   body {
     background-color: var(--color-brand-light);
     color: var(--color-brand-dark);
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: var(--font-montserrat);
     -webkit-font-smoothing: antialiased;
   }
 }

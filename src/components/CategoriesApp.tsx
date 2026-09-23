@@ -20,13 +20,13 @@ const CATEGORIES: CategoryItem[] = [
   {
     id: 'cocinas',
     nombre: 'Cocinas',
-    imagen: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+    imagen: '/Cocina8mini.webp',
     descripcion: 'Amoblamientos integrales'
   },
   {
     id: 'placards',
     nombre: 'Placards',
-    imagen: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
+    imagen: '/Placard1.webp',
     descripcion: 'Vestidores y roperos'
   },
   {
@@ -53,47 +53,53 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
   cocinas: [
     {
       id: 'coc-1',
-      titulo: 'Amoblamiento Bajo Mesada & Alacena',
-      descripcion: 'Diseño integral en MDF laqueado con tiradores ocultos tipo gola y cajoneras de cierre suave.',
-      imagen: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Amoblamiento con torre',
+      descripcion: 'Diseño integral en MDF con tiradores de aluminio tipo MHT, cajoneras de cierre suave y alacena rebatible.',
+      imagen: '/Cocina1.webp'
     },
     {
       id: 'coc-2',
-      titulo: 'Isla Central Multifunción',
-      descripcion: 'Isla con desayunador incorporado, módulos de guardado inferior y mesada de melamina reforzada.',
-      imagen: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Cocina Integral Moderna',
+      descripcion: 'Diseño e instalación de bajo mesadas en MDF con FAPLAC, alacena con puertas de vidrio y manijas de aluminio.',
+      imagen: '/Cocina2.webp'
     },
     {
       id: 'coc-3',
-      titulo: 'Torre de Horno y Despensero',
-      descripcion: 'Módulo vertical para microondas, horno empotrable y despensero extensible con estantes ajustables.',
-      imagen: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Alacenas de Vidrio y MDF',
+      descripcion: 'Alacenas superiores con perfilería de aluminio y vidrio negro, con bajo mesada de alto contraste.',
+      imagen: '/Cocina3.webp'
     },
     {
       id: 'coc-4',
-      titulo: 'Alacenas de Vidrio y MDF',
-      descripcion: 'Alacenas superiores con perfilería de aluminio, vidrio esmerilado y pistones a gas.',
-      imagen: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Amoblamiento Bajo Mesada & Alacena',
+      descripcion: 'Bajo mesada y alacenas con melamina brillosa con manijas de aluminio y tiradores ocultos.',
+      imagen: '/Cocina6.webp'
     }
   ],
   placards: [
     {
       id: 'pla-1',
-      titulo: 'Vestidor Abierto Modular',
-      descripcion: 'Estructura en MDF textura madera con sectores de colgado, pantalonera y estantes regulables.',
-      imagen: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Placard de Puertas Corredizas de 2 modulos',
+      descripcion: 'Estructura en MDF textura gris grafit0 con sectores de colgado y estantes.',
+      imagen: '/Placard1.webp'
     },
     {
       id: 'pla-2',
-      titulo: 'Placard de Puertas Corredizas',
-      descripcion: 'Ropero de piso a techo con espejo en hoja central y guías de aluminio silenciosas.',
-      imagen: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Placard de Puertas Corredizas de 4 modulos',
+      descripcion: 'Estructura de piso a techo con guías de aluminio silenciosas y espacio optimizado.',
+      imagen: '/Placard2.webp'
     },
     {
       id: 'pla-3',
-      titulo: 'Placard Infantil con Organizador',
-      descripcion: 'Diseño funcional en colores pastel con cajones inferiores para juguetes y ropa.',
-      imagen: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Placard de Puertas Corredizas',
+      descripcion: 'Diseño funcional en color blanco con cajones inferiores para calzado y ropa.',
+      imagen: '/Placard3mini.webp'
+    },
+    {
+      id: 'pla-4',
+      titulo: 'Placard de Puertas Corredizas',
+      descripcion: 'Diseño practico en color blanco con cajones inferiores y sector de colgado.',
+      imagen: '/Placard4.webp'
     }
   ],
   racks: [
@@ -263,7 +269,7 @@ const CategoriesApp = () => {
                       <img
                         src={product.imagen}
                         alt={product.titulo}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 [image-rendering:auto] backface-hidden"
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

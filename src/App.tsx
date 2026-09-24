@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import './css/embla.css'
 import CategoriesApp from './components/CategoriesApp';
 import AboutMDFApp from './components/AboutMDFApp';
+import VideoShowcase from './components/VideoShowcase';
 import PortfolioApp from './components/PortfolioApp';
 import LocationApp from './components/LocationApp';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -20,6 +21,7 @@ function App() {
         <Hero whatsappNumber={WHATSAPP_NUMBER} />
         <CategoriesApp/>
         <AboutMDFApp/>
+        <VideoShowcase />
         <PortfolioApp/>
         <LocationApp whatsappNumber={WHATSAPP_NUMBER} />
       </section>

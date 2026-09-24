@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0a0a0a; font-family: 'Inter', system-ui, sans-serif; }
+      #root { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; }
+      .bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.85) 100%); }
+      .content-box {
+        position: absolute; bottom: 100px; left: 0; right: 0; margin: 0 auto;
+        width: 1400px; padding: 40px 60px; background: rgba(37, 13, 3, 0.85);
+        backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+        border: 2px solid rgba(160, 107, 88, 0.4); border-radius: 28px;
+        text-align: center; color: #ffffff; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        display: flex; flex-direction: column; align-items: center; gap: 16px;
+      }
+      .badge {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: rgba(160, 107, 88, 0.4); border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 24px; border-radius: 9999px; font-size: 22px; font-weight: 700;
+        letter-spacing: 0.05em; text-transform: uppercase; color: #e3ded5;
+      }
+      .title { font-size: 58px; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; text-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+      .subtitle { font-size: 28px; font-weight: 400; line-height: 1.4; color: rgba(227, 222, 213, 0.9); max-width: 1100px; }
+      .logo-img { height: 100px; width: auto; margin-bottom: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="scene5" data-start="0" data-duration="6" data-width="1920" data-height="1080">
+      <img class="bg-img" src="public/Cocina8.webp" alt="Renuevo Muebles" />
+      <div class="overlay"></div>
+      <div class="content-box">
+        <img class="logo-img" src="public/FotoLogoFondoNegro3-removebg-preview.svg" alt="Renuevo Muebles Logo" />
+        <h1 class="title">RENUEVO MUEBLES</h1>
+        <p class="subtitle">Traé tus medidas o planos y lo armamos juntos. ¡Cotizá directamente por WhatsApp!</p>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo(".bg-img", { scale: 1 }, { scale: 1.15, duration: 6, ease: "none" }, 0);
+      tl.fromTo(".content-box", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out" }, 0.3);
+      window.__timelines["scene5"] = tl;
+    </script>
+  </body>
+</html>

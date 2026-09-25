@@ -66,15 +66,11 @@ const VideoShowcase: React.FC = () => {
         
         {/* Encabezado de la Sección */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center space-x-2 bg-brand-accent/20 border border-brand-accent/40 text-brand-light px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-3">
-            <Film className="w-4 h-4 text-brand-accent" />
-            <span>Proceso de Fabricación</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
-            Así Creamos Tus Muebles a Medida
+            ¿Querés ver más?
           </h2>
           <p className="mt-3 text-sm sm:text-base text-brand-muted">
-            Conocé el paso a paso del proceso artesanal y de alta tecnología con el que fabricamos cada proyecto.
+            Conocé nuestros muebles con la mejor tecnología y con diseños modernos que buscan mejorar tu hogar.
           </p>
         </div>
 

@@ -66,6 +66,7 @@ rm-landingpage-typescript/
 │   ├── main.tsx
 │   ├── index.css
 │   └── assets/
+│   └── components/
 ├── index.html
 ├── package.json
 ├── tsconfig.json
@@ -80,11 +81,9 @@ rm-landingpage-typescript/
 Aunque cada implementación puede variar según el diseño, este tipo de proyecto suele incluir:
 
 - Hero section con título principal y CTA
-- Sección de beneficios o features
-- Sección de productos o servicios
-- Testimonios o trust indicators
-- Bloques informativos
-- Botones de acción
+- Sección de catalogo
+- Bloque informativo
+- Botones en la navegacion
 - Diseño responsive para móvil, tablet y escritorio
 
 ## Personalización
@@ -100,9 +99,7 @@ Puedes modificar fácilmente:
 La estructura modular de React permite crear secciones como:
 - Header
 - Hero
-- Features
-- Pricing
-- Testimonials
+- catalog
 - Footer
 
 ## Scripts disponibles
@@ -117,29 +114,15 @@ npm run preview
 
 ## Despliegue
 
-Puedes desplegar esta app en cualquiera de estos servicios:
+Desplegamos en este servicio:
 
-- Vercel
 - Netlify
-- GitHub Pages
-- Firebase Hosting
 
 Solo necesitas compilar con:
 
 ```bash
 npm run build
 ```
-
-y subir la carpeta `dist` o conectarlo con tu servicio de hosting.
-
-## Contribución
-
-Si quieres colaborar, puedes:
-
-1. Hacer un fork del proyecto
-2. Crear una rama nueva
-3. Realizar tus cambios
-4. Abrir un pull request
 
 ## Licencia
 
@@ -158,3 +141,13 @@ Este README puede ajustarse según la versión final de la landing page, como po
 ---
 
 Si quieres, puedo dejarte una versión más profesional, más comercial o más enfocada a un SaaS/producto específico.
+<img width="1359" height="692" alt="Main1" src="https://github.com/user-attachments/assets/433bed60-2c00-4081-9a57-356c73ea0509" />
+<img width="1340" height="689" alt="cat1" src="https://github.com/user-attachments/assets/939996dc-8e72-413d-827d-1c293c6b95d5" />
+<img width="1343" height="690" alt="cat2" src="https://github.com/user-attachments/assets/b3e5d8bb-2afd-492c-ba52-39345c1d3fd1" />
+<img width="1343" height="689" alt="video1" src="https://github.com/user-attachments/assets/d8617732-80fd-404c-9916-d3806b4a1a42" />
+<img width="1338" height="690" alt="ubi1" src="https://github.com/user-attachments/assets/6a11bf2a-1cf5-468f-8203-b45b9a7ee3ae" />
+
+
+
+
+

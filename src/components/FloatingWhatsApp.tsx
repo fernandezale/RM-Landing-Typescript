@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
+
 
 interface FloatingWhatsAppProps {
   whatsappNumber: string;

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Play, Pause, Volume2, VolumeX, Sparkles, Film } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // Video MP4 demostrativo de carpintería / fabricación de muebles

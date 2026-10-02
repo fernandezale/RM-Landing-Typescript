@@ -35,7 +35,7 @@ const Hero = ({ whatsappNumber }: HeroProps) => {
     distintivo: 'Organización & Diseño',
     descripcion: 'Aprovechá al máximo cada rincón de tu living o dormitorio con muebles modulares en MDF.',
     textoDestacado: 'Estructuras firmes y acabados listos.',
-    imagen: '/IMG_5963.webp',
+    imagen: '/RecientesRack.webp',
   },
   ];
 

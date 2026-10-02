@@ -19,7 +19,7 @@ const PROJECTS: Project[] = [
     id: '2',
     titulo: 'Rack TV y Biblioteca',
     descripcion: 'Mueble de living a medida con espacio para cableado oculto, repisas con luces y modulos de guardado.',
-    imagen: '/IMG_5963.webp'
+    imagen: '/RecientesRack.webp'
   },
   {
     id: '3',
@@ -71,7 +71,7 @@ const PortfolioApp = () => {
               <h3 className="text-xl font-bold text-brand-dark mb-2">
                 {project.titulo}
               </h3>
-              <p className="text-sm text-brand-dark/80 leading-relaxed max-w-sm">
+              <p className="text-sm font-semibold text-brand-dark/80 leading-relaxed max-w-sm">
                 {project.descripcion}
               </p>
             </div>

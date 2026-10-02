@@ -107,7 +107,7 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
       id: 'rac-1',
       titulo: 'Rack TV Flotante con Repisas',
       descripcion: 'Mueble de living flotante con pasacables ocultos, luces LED cálidas y puerta volcáble.',
-      imagen: 'https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Rack1.webp'
     },
     {
       id: 'rac-2',
@@ -119,8 +119,27 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
       id: 'rac-3',
       titulo: 'Centro de Entretenimiento Modular',
       descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      imagen: '/RecientesRack.webp'
+    },
+    {
+      id: 'rac-4',
+      titulo: 'Centro de Entretenimiento Modular',
+      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
+    },
+    {
+      id: 'rac-5',
+      titulo: 'Centro de Entretenimiento Modular',
+      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
+    },
+    {
+      id: 'rac-6',
+      titulo: 'Centro de Entretenimiento Modular',
+      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
       imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
     }
+    
   ],
   escritorios: [
     {
@@ -217,7 +236,7 @@ const CategoriesApp = () => {
                         {category.nombre}
                       </h3>
                       {category.descripcion && (
-                        <p className="text-xs sm:text-sm text-brand-dark/70 mt-0.5">
+                        <p className="text-xs font-semibold sm:text-sm text-brand-dark/70 mt-0.5">
                           {category.descripcion}
                         </p>
                       )}
@@ -284,7 +303,7 @@ const CategoriesApp = () => {
                       <h3 className="text-base font-bold text-brand-dark group-hover:text-brand-accent transition-colors mb-1">
                         {product.titulo}
                       </h3>
-                      <p className="text-xs text-brand-dark/70 leading-relaxed line-clamp-3">
+                      <p className="text-xs font-semibold text-brand-dark/70 leading-relaxed line-clamp-3">
                         {product.descripcion}
                       </p>
                     </div>
@@ -338,7 +357,7 @@ const CategoriesApp = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-brand-dark mb-2">
                   {selectedProduct.titulo}
                 </h3>
-                <p className="text-sm text-brand-dark/80 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-sm font-semibold text-brand-dark/80 max-w-2xl mx-auto leading-relaxed">
                   {selectedProduct.descripcion}
                 </p>
               </div>

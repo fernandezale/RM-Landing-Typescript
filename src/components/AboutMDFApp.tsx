@@ -97,7 +97,7 @@ const AboutMDFApp = () => {
                 </h3>
 
                 {/* Descripción Corta */}
-                <p className="text-sm text-brand-dark/70 leading-relaxed">
+                <p className="text-sm font-semibold text-brand-dark/70 leading-relaxed">
                   {item.descripcion}
                 </p>
               </div>

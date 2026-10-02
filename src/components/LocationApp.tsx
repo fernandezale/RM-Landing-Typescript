@@ -20,7 +20,7 @@ const LocationApp: React.FC<LocationAppProps> = ({ whatsappNumber }) => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight uppercase">
             Nuestro Taller y Ubicación
           </h2>
-          <p className="mt-3 text-base text-brand-dark/70">
+          <p className="mt-3 font-semibold text-base text-brand-dark/70">
             Visitános para conocer las texturas de MDF, muestras de melaminas y asesorarte con planos o medidas para tu hogar.
           </p>
         </div>
@@ -38,7 +38,7 @@ const LocationApp: React.FC<LocationAppProps> = ({ whatsappNumber }) => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-brand-dark">Dirección del Taller</h3>
-                <p className="text-sm text-brand-dark/80 mt-1">
+                <p className="text-sm font-semibold text-brand-dark/80 mt-1">
                   Asturias 2871, Córdoba Capital, Argentina.
                 </p>
                 <p className="text-xs text-brand-muted mt-1">
@@ -70,11 +70,11 @@ const LocationApp: React.FC<LocationAppProps> = ({ whatsappNumber }) => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-brand-dark">Zonas de Envíos y Armado</h3>
-                <p className="text-sm text-brand-dark/80 mt-1">
+                <p className="text-sm font-semibold text-brand-dark/80 mt-1">
                  Instalación solo para Córdoba Capital y zonas aledañas. Envios todo el país.
                 </p>
                 <p className="text-xs text-brand-muted mt-1">
-                  Disponemos de flete propio y equipo de montaje par Córdoba.
+                  Disponemos de flete propio y equipo de montaje para Córdoba.
                 </p>
               </div>
             </div>

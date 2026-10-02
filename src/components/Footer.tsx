@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
           <div>
             <span className="text-lg font-bold text-brand-light">RENUEVO MUEBLES</span>
-            <p className="text-xs text-brand-muted mt-1">Muebles funcionales en fibra de madera de densidad media.</p>
+            <p className="text-base text-brand-muted mt-1">Muebles funcionales en fibra de madera de densidad media.</p>
           </div>
 
-          <div className="flex justify-center space-x-6 text-xs text-brand-muted">
+          <div className="flex justify-center space-x-6 text-sm text-brand-muted">
             <a href="#catalogo" className="hover:text-brand-light transition-colors">Catálogo</a>
             <a href="#nosotros" className="hover:text-brand-light transition-colors">Por qué MDF</a>
             <a href="#ultimos-trabajos" className="hover:text-brand-light transition-colors">Últimos Trabajos</a>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* Sub-footer sutil para Créditos de Desarrollo */}
-        <div className="mt-8 pt-6 border-t border-brand-brown/40 flex flex-col sm:flex-row justify-between items-center text-[11px] text-brand-muted/70 gap-2">
+        <div className="mt-8 pt-6 border-t border-brand-brown/40 flex flex-col sm:flex-row justify-between items-center text-[13px] text-brand-muted/70 gap-2">
           <span>Diseño y Desarrollo Web por Alexis Fernández</span>
           <a 
             href="https://fernandezale.github.io/pages/PaginaFrontend.html" 

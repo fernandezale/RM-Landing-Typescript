@@ -38,7 +38,7 @@ const CATEGORIES: CategoryItem[] = [
   {
     id: 'escritorios',
     nombre: 'Escritorios',
-    imagen: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80',
+    imagen: '/RecientesEscritorio.webp',
     descripcion: 'Espacios de trabajo'
   },
   {
@@ -146,19 +146,26 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
       id: 'esc-1',
       titulo: 'Escritorio Ergonómico Home Office',
       descripcion: 'Mesa de trabajo amplia con cajonera rodante de 3 cajones y canaleta pasa-cables.',
-      imagen: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/RecientesEscritorio.webp'
     },
     {
       id: 'esc-2',
       titulo: 'Escritorio Gamer en L',
       descripcion: 'Puesto esquinero reforzado en MDF ultra resistente con soporte para múltiples monitores.',
-      imagen: 'https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Escritorio1.webp'
     },
     {
       id: 'esc-3',
       titulo: 'Puesto Doble de Trabajo',
       descripcion: 'Escritorio compartido de 2.40m con divisor acústico y organizadores de documentos.',
-      imagen: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Escritorio2.webp'
+    }
+    ,
+    {
+      id: 'esc-3',
+      titulo: 'Puesto Doble de Trabajo',
+      descripcion: 'Escritorio compartido de 2.40m con divisor acústico y organizadores de documentos.',
+      imagen: '/Escritorio3.webp'
     }
   ],
   otros: [

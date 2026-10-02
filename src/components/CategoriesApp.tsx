@@ -32,7 +32,7 @@ const CATEGORIES: CategoryItem[] = [
   {
     id: 'racks',
     nombre: 'Racks',
-    imagen: 'https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=800&q=80',
+    imagen: '/RecientesRack.webp',
     descripcion: 'Muebles para TV y estar'
   },
   {
@@ -113,7 +113,7 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
       id: 'rac-2',
       titulo: 'Panel de TV Integral de Pared',
       descripcion: 'Panel en listones de MDF con repisa superior y mueble bajo con cajones de apertura press.',
-      imagen: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Rack2.webp'
     },
     {
       id: 'rac-3',
@@ -125,19 +125,19 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
       id: 'rac-4',
       titulo: 'Centro de Entretenimiento Modular',
       descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
-      imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Rack3.webp'
     },
     {
       id: 'rac-5',
       titulo: 'Centro de Entretenimiento Modular',
       descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
-      imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Rack4.webp'
     },
     {
       id: 'rac-6',
       titulo: 'Centro de Entretenimiento Modular',
       descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
-      imagen: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80'
+      imagen: '/Rack5.webp'
     }
     
   ],

@@ -44,7 +44,7 @@ const CATEGORIES: CategoryItem[] = [
   {
     id: 'otros',
     nombre: 'Otros',
-    imagen: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
+    imagen: '/Otros2.webp',
     descripcion: 'Diseños a medida'
   }
 ];
@@ -105,38 +105,38 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
   racks: [
     {
       id: 'rac-1',
-      titulo: 'Rack TV Flotante con Repisas',
-      descripcion: 'Mueble de living flotante con pasacables ocultos, luces LED cálidas y puerta volcáble.',
+      titulo: 'Rack TV  puertas corredizas y repisas',
+      descripcion: 'Mueble de living listonado, luces LED cálidas, puertas corredizas y espacio de guardado.',
       imagen: '/Rack1.webp'
     },
     {
       id: 'rac-2',
       titulo: 'Panel de TV Integral de Pared',
-      descripcion: 'Panel en listones de MDF con repisa superior y mueble bajo con cajones de apertura press.',
+      descripcion: 'Panel en listones de MDF con tiras LED y mueble bajo con estantes.',
       imagen: '/Rack2.webp'
     },
     {
       id: 'rac-3',
       titulo: 'Centro de Entretenimiento Modular',
-      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      descripcion: 'Estructura combinada en melamina lisa y texturada con espacio para consolas y libros, mas iluminación LED.',
       imagen: '/RecientesRack.webp'
     },
     {
       id: 'rac-4',
-      titulo: 'Centro de Entretenimiento Modular',
-      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      titulo: 'Rack TV Flotante con Repisas',
+      descripcion: 'Mueble de living flotante con cajones y puerta de vidrio con repisas.',
       imagen: '/Rack3.webp'
     },
     {
       id: 'rac-5',
-      titulo: 'Centro de Entretenimiento Modular',
-      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      titulo: 'Rack TV Flotante con Repisas',
+      descripcion: 'Mueble de habitación flotante con pasacables ocultos y luces LED cálidas.',
       imagen: '/Rack4.webp'
     },
     {
       id: 'rac-6',
-      titulo: 'Centro de Entretenimiento Modular',
-      descripcion: 'Estructura combinada en melamina grafito y roble con espacio para consolas y libros.',
+      titulo: 'Rack listonado con cajones y torre de estantes',
+      descripcion: 'Estructura con textura de madera y listonado con espacios de guardado.',
       imagen: '/Rack5.webp'
     }
     
@@ -144,48 +144,66 @@ const PRODUCTS_BY_CATEGORY: Record<string, CategoryProduct[]> = {
   escritorios: [
     {
       id: 'esc-1',
-      titulo: 'Escritorio Ergonómico Home Office',
-      descripcion: 'Mesa de trabajo amplia con cajonera rodante de 3 cajones y canaleta pasa-cables.',
+      titulo: 'Escritorio Home Office',
+      descripcion: 'Escritorio con estante superior, iluminación LED y fondo listonado.',
       imagen: '/RecientesEscritorio.webp'
     },
     {
       id: 'esc-2',
-      titulo: 'Escritorio Gamer en L',
-      descripcion: 'Puesto esquinero reforzado en MDF ultra resistente con soporte para múltiples monitores.',
+      titulo: 'Escritorio de estudio',
+      descripcion: 'Escritorio con cajoneras, torre de estantes y lugar de guardado superior con iluminación LED.',
       imagen: '/Escritorio1.webp'
     },
     {
       id: 'esc-3',
-      titulo: 'Puesto Doble de Trabajo',
-      descripcion: 'Escritorio compartido de 2.40m con divisor acústico y organizadores de documentos.',
+      titulo: 'Escritorio flotante con cajonera',
+      descripcion: 'Escritorio con cajones y lugar de guardado superior.',
       imagen: '/Escritorio2.webp'
     }
     ,
     {
       id: 'esc-3',
-      titulo: 'Puesto Doble de Trabajo',
-      descripcion: 'Escritorio compartido de 2.40m con divisor acústico y organizadores de documentos.',
+      titulo: 'Amplio escritorio',
+      descripcion: 'Escritorio con lugares de guardado, estantes y detalle listonado.',
       imagen: '/Escritorio3.webp'
     }
   ],
   otros: [
     {
       id: 'otr-1',
-      titulo: 'Vanitory de Baño a Medida',
-      descripcion: 'Mueble suspendido resistente a la humedad con cajón profundo para ordenadores.',
-      imagen: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Estantería / Recibidor de Entrada',
+      descripcion: 'Mueble con gran capacidad de guardado con estantes y tiras LED.',
+      imagen: '/Otros1.webp'
     },
     {
       id: 'otr-2',
-      titulo: 'Mesa de Noche Flotante',
-      descripcion: 'Mueble de dormitorio minimalista con cajón oculto y acabado textura madera.',
-      imagen: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1000&q=80'
+      titulo: 'Vanitory de Baño a Medida',
+      descripcion: 'Mueble suspendido resistente a la humedad con cajón profundo para ordenadores.',
+      imagen: '/Otros2.webp'
     },
     {
       id: 'otr-3',
       titulo: 'Estantería / Recibidor de Entrada',
-      descripcion: 'Mueble recibidor compacto con perchero incorporado, espejo y zapatero en MDF.',
-      imagen: 'https://images.unsplash.com/photo-1538688422688-6644f6f1c4e7?auto=format&fit=crop&w=1000&q=80'
+      descripcion: 'Mueble recibidor con puertas de vidrio con perfiles negros, lugar de guardado inferior y estantes.',
+      imagen: '/Otros3.webp'
+    },
+    {
+      id: 'otr-4',
+      titulo: 'Tocador / Maquillador Flotante',
+      descripcion: 'Mueble flotante con cajones, espejo, tiras LED y listonado de madera.',
+      imagen: '/Otros4.webp'
+    },
+    {
+      id: 'otr-5',
+      titulo: 'Vanitory de Baño',
+      descripcion: 'Mueble resistente a la humedad de MDF.',
+      imagen: '/Otros5.webp'
+    },
+    {
+      id: 'otr-6',
+      titulo: 'Mesa de Noche Flotante',
+      descripcion: 'Mueble de dormitorio minimalista con cajón oculto y acabado textura lisa.',
+      imagen: '/Otros6.webp'
     }
   ]
 };
